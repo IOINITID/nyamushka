@@ -77,17 +77,18 @@
   position: absolute;
   right: 16px;
   bottom: 16px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 80px;
   height: 80px;
+  padding-top: 5px;
   background: #1698d9;
   border-radius: 50%;
 }
 
 .card__weight span {
-  position: absolute;
-  top: 20px;
-  left: 10px;
   font-weight: 400;
   font-size: 42px;
   line-height: 22px;
