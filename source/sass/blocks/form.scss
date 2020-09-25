@@ -1,0 +1,42 @@
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1280px;
+  height: 680px;
+  padding: 36px 80px 67px 80px;
+  transform: translate(-50%, -50%);
+}
+
+.form__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 36px;
+  line-height: 44px;
+  font-family: inherit;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 1px 1px #000000;
+}
+
+.form__items {}
+
+.form__label {
+  width: 320px;
+  height: 509px;
+  // font-weight: 400;
+  // font-size: 13px;
+  // line-height: 15px;
+  // font-family: "Trebuchet MS", "Arial", sans-serif;
+  // text-align: center;
+  // color: #ffffff;
+}
+
+.form__buy {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  font-family: "Trebuchet MS", "Arial", sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
