@@ -1,4 +1,4 @@
-Название: **Нямушка**
+Название: **Нямушка** [![Build Status](https://travis-ci.com/IOINITID/nyamushka.svg?branch=master)](https://travis-ci.com/IOINITID/nyamushka)
 
 ------------
 
