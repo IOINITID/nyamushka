@@ -4,12 +4,12 @@ const formLabel = document.querySelectorAll(`.form__label`);
  * @description очищает активный класс всех карточек.
  */
 const clearFormLabelActive = () => {
-  formLabel.forEach((item) => {
+  for (const item of formLabel) {
     item.classList.remove(`form__label--active`);
-  });
+  }
 };
 
-formLabel.forEach((item) => {
+for (const item of formLabel) {
   item.addEventListener(`mouseout`, (evt) => {
     evt.preventDefault();
 
@@ -17,4 +17,4 @@ formLabel.forEach((item) => {
 
     item.classList.add(`form__label--active`);
   });
-});
+}
