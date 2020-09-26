@@ -23,14 +23,14 @@ const SourceFiles = {
   STYLES: 'source/sass/style.scss',
   SCRIPTS: 'source/js/**/*.js',
   FONTS: 'source/fonts/**/*.{woff2,woff,ttf}',
-  IMAGES: 'source/img/**/*.{jpg,png,svg}',
+  IMAGES: 'source/img/**/*.{jpg,png}',
   SVG: 'source/img/*-icon.svg',
   WATCH: {
     MARKUP: 'source/**/*.html',
     STYLES: 'source/sass/**/*.scss',
     SCRIPTS: 'source/js/**/*.js',
     FONTS: 'source/fonts/**/*.{woff2,woff,ttf}',
-    IMAGES: 'source/img/**/*.{jpg,png,svg}',
+    IMAGES: 'source/img/**/*.{jpg,png}',
     SVG: 'source/img/*-icon.svg',
   }
 };
@@ -122,6 +122,24 @@ const sprites = () => {
     .pipe(browserSync.stream());
 };
 
+// Copy svg4everybody library
+const svg4everybody = () => {
+  return src('node_modules/svg4everybody/dist/svg4everybody.min.js')
+  .pipe(dest('build/js'));
+};
+
+// Copy picturefill library
+const picturefill = () => {
+  return src('node_modules/picturefill/dist/picturefill.min.js')
+  .pipe(dest('build/js'));
+};
+
+// Copy babel polyfill library
+const polyfill = () => {
+  return src('node_modules/babel-polyfill/dist/polyfill.min.js')
+  .pipe(dest('build/js'));
+};
+
 // Server live reloading
 const server = () => {
   browserSync.init({server: 'build'});
@@ -142,7 +160,7 @@ const server = () => {
 };
 
 // Build project
-const build = series(remove, parallel(markup, styles, scripts, images, fonts, webp, sprites));
+const build = series(remove, parallel(markup, styles, scripts, svg4everybody, picturefill, polyfill, images, fonts, webp, sprites));
 
 // Start server
 const start = series(build, server);
