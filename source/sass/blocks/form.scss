@@ -71,6 +71,19 @@
   display: none;
 }
 
+.form__label--active .form__link {
+  color: #2ea8e6;
+  border-bottom: 1px dashed #2ea8e6;
+}
+
+.form__label--active .card__color {
+  fill: #2ea8e6;
+}
+
+.form__label--active .card__weight {
+  background: #2ea8e6;
+}
+
 .form__checkbox:checked ~ .card .card__background--second .card__color {
   fill: #d91667;
 }
@@ -81,6 +94,18 @@
 
 .form__checkbox:checked ~ .card .card__promo--active {
   color: #d91667;
+}
+
+.form__label--active .form__checkbox:checked ~ .card .card__background--second .card__color {
+  fill: #e52e7a;
+}
+
+.form__label--active .form__checkbox:checked ~ .card .card__weight {
+  background: #e52e7a;
+}
+
+.form__label--active .form__checkbox:checked ~ .card .card__promo {
+  color: #e52e7a;
 }
 
 .form__checkbox:checked ~ .form__buy.form__buy--default {
