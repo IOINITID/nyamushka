@@ -224,4 +224,8 @@
   .form__label:last-child {
     margin-bottom: 0;
   }
+
+  .form__label:nth-child(3n) {
+    margin-right: 0;
+  }
 }
