@@ -36,8 +36,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  font-family: var(--basic-font-additional);
-  color: var(--basic-dove-gray);
+  font-family: $basic-font-additional;
+  color: $basic-dove-gray;
 }
 
 .card__title {
@@ -46,8 +46,8 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
-  font-family: var(--basic-font-additional);
-  color: var(--basic-black);
+  font-family: $basic-font-additional;
+  color: $basic-black;
 }
 
 .card__title--additional {
@@ -66,8 +66,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  font-family: var(--basic-font-additional);
-  color: var(--basic-dove-gray);
+  font-family: $basic-font-additional;
+  color: $basic-dove-gray;
 }
 
 .card__item b {
@@ -85,7 +85,7 @@
   width: 80px;
   height: 80px;
   padding-top: 5px;
-  background: var(--basic-curious-blue);
+  background: $basic-curious-blue;
   border-radius: 50%;
 }
 
@@ -93,9 +93,9 @@
   font-weight: 400;
   font-size: 42px;
   line-height: 22px;
-  font-family: var(--basic-font-additional);
+  font-family: $basic-font-additional;
   text-align: center;
-  color: var(--basic-white);
+  color: $basic-white;
 }
 
 .card__weight sub {

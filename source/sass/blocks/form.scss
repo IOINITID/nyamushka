@@ -21,8 +21,8 @@
   line-height: 44px;
   font-family: inherit;
   text-align: center;
-  color: var(--basic-white);
-  text-shadow: 0 1px 1px var(--basic-black);
+  color: $basic-white;
+  text-shadow: 0 1px 1px $basic-black;
 }
 
 .form__items {
@@ -47,15 +47,15 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
-  font-family: var(--basic-font-additional);
+  font-family: $basic-font-additional;
   text-align: center;
-  color: var(--basic-white);
+  color: $basic-white;
 }
 
 .form__link {
-  color: var(--basic-curious-blue);
+  color: $basic-curious-blue;
   text-decoration: none;
-  border-bottom: 1px dashed var(--basic-curious-blue);
+  border-bottom: 1px dashed $basic-curious-blue;
   cursor: pointer;
 }
 
@@ -72,40 +72,40 @@
 }
 
 .form__label--active .form__link {
-  color: var(--basic-picton-blue);
-  border-bottom: 1px dashed var(--basic-picton-blue);
+  color: $basic-picton-blue;
+  border-bottom: 1px dashed $basic-picton-blue;
 }
 
 .form__label--active .card__color {
-  fill: var(--basic-picton-blue);
+  fill: $basic-picton-blue;
 }
 
 .form__label--active .card__weight {
-  background: var(--basic-picton-blue);
+  background: $basic-picton-blue;
 }
 
 .form__checkbox:checked ~ .card .card__background--second .card__color {
-  fill: var(--basic-razzmatazz);
+  fill: $basic-razzmatazz;
 }
 
 .form__checkbox:checked ~ .card .card__weight {
-  background: var(--basic-razzmatazz);
+  background: $basic-razzmatazz;
 }
 
 .form__checkbox:checked ~ .card .card__promo--active {
-  color: var(--basic-razzmatazz);
+  color: $basic-razzmatazz;
 }
 
 .form__label--active .form__checkbox:checked ~ .card .card__background--second .card__color {
-  fill: var(--basic-cerise-red);
+  fill: $basic-cerise-red;
 }
 
 .form__label--active .form__checkbox:checked ~ .card .card__weight {
-  background: var(--basic-cerise-red);
+  background: $basic-cerise-red;
 }
 
 .form__label--active .form__checkbox:checked ~ .card .card__promo {
-  color: var(--basic-cerise-red);
+  color: $basic-cerise-red;
 }
 
 .form__checkbox:checked ~ .form__buy.form__buy--default {
@@ -117,7 +117,7 @@
 }
 
 .form__checkbox:disabled ~ .form__buy {
-  color: var(--basic-laser-lemon);
+  color: $basic-laser-lemon;
 }
 
 .form__checkbox:disabled ~ .form__buy.form__buy--default {
@@ -133,24 +133,24 @@
 }
 
 .form__checkbox:disabled ~ .card .card__promo {
-  color: var(--basic-nobel);
+  color: $basic-nobel;
   opacity: 0.5;
 }
 
 .form__checkbox:disabled ~ .card .card__title {
-  color: var(--basic-nobel);
+  color: $basic-nobel;
   opacity: 0.5;
 }
 
 .form__checkbox:disabled ~ .card .card__item {
-  color: var(--basic-nobel);
+  color: $basic-nobel;
   opacity: 0.5;
 }
 
 .form__checkbox:disabled ~ .card .card__weight {
-  background: var(--basic-nobel);
+  background: $basic-nobel;
 }
 
 .form__checkbox:disabled ~ .card .card__color {
-  fill: var(--basic-nobel);
+  fill: $basic-nobel;
 }
