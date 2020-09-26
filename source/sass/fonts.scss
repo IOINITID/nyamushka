@@ -8,3 +8,26 @@
     url("../fonts/Exo-2-Thin.ttf") format("truetype"),
     url("../fonts/Exo-2-Thin.otf") format("opentype");
 }
+
+@font-face {
+  font-weight: 400;
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/TrebuchetMS.woff2") format("woff2"),
+    url("../fonts/TrebuchetMS.woff") format("woff"),
+    url("../fonts/TrebuchetMS.ttf") format("truetype"),
+    url("../fonts/TrebuchetMS.otf") format("opentype");
+}
+
+
+@font-face {
+  font-weight: 700;
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/TrebuchetMS-Bold.woff2") format("woff2"),
+    url("../fonts/TrebuchetMS-Bold.woff") format("woff"),
+    url("../fonts/TrebuchetMS-Bold.ttf") format("truetype"),
+    url("../fonts/TrebuchetMS-Bold.otf") format("opentype");
+}
