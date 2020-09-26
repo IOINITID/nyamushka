@@ -7,6 +7,12 @@
   <meta name="description" content="Нямушка - сайт еды для кошек.">
   <title>Нямушка: Главная</title>
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="./img/favicon.png">
+  <link rel="preload" href="fonts/Exo-2-Thin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -25,7 +31,11 @@
                   d="M0 42.6762V468C0 474.627 5.37259 480 12 480H308C314.627 480 320 474.627 320 468V12C320 5.37258 314.627 0 308 0H42.6762L0 42.6762Z"
                   fill="#F2F2F2" />
               </svg>
-              <img class="card__image" src="./img/cat@1x.png" alt="Кот с длинной шерстью и цепочкой на шее.">
+              <picture>
+                <source srcset="./img/cat@1x.webp 1x, ./img/cat@2x.webp 2x" type="image/webp">
+                <img class="card__image" src="./img/cat@1x.png" srcset="./img/cat@2x.png 2x"
+                  alt="Кот с длинной шерстью и цепочкой на шее.">
+              </picture>
               <svg class="card__background card__background--second" width="320" height="480" viewBox="0 0 320 480"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="path-1-inside-1" fill="white">
@@ -47,7 +57,7 @@
                 <span>0,5<sub>кг</sub></span>
               </div>
             </div>
-            <p class="form__buy form__buy--default">Чего сидишь? Порадуй котэ, <a class="form__link" href="#">купи</a>.
+            <p class="form__buy form__buy--default">Чего сидишь? Порадуй котэ, <a class="form__link">купи</a>.
             </p>
             <p class="form__buy form__buy--checked">Печень утки разварная с артишоками.</p>
             <p class="form__buy form__buy--disabled">Печалька, с фуа-гра закончился.</p>
@@ -62,7 +72,11 @@
                   d="M0 42.6762V468C0 474.627 5.37259 480 12 480H308C314.627 480 320 474.627 320 468V12C320 5.37258 314.627 0 308 0H42.6762L0 42.6762Z"
                   fill="#F2F2F2" />
               </svg>
-              <img class="card__image" src="./img/cat@1x.png" alt="Кот с длинной шерстью и цепочкой на шее.">
+              <picture>
+                <source srcset="./img/cat@1x.webp 1x, ./img/cat@2x.webp 2x" type="image/webp">
+                <img class="card__image" src="./img/cat@1x.png" srcset="./img/cat@2x.png 2x"
+                  alt="Кот с длинной шерстью и цепочкой на шее.">
+              </picture>
               <svg class="card__background card__background--second" width="320" height="480" viewBox="0 0 320 480"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="path-1-inside-1" fill="white">
@@ -83,7 +97,7 @@
                 <span>2<sub>кг</sub></span>
               </div>
             </div>
-            <p class="form__buy form__buy--default">Чего сидишь? Порадуй котэ, <a class="form__link" href="#">купи</a>.
+            <p class="form__buy form__buy--default">Чего сидишь? Порадуй котэ, <a class="form__link">купи</a>.
             </p>
             <p class="form__buy form__buy--checked">Головы щучьи с чесноком да свежайшая сёмгушка.</p>
             <p class="form__buy form__buy--disabled">Печалька, с рыбой закончился.</p>
@@ -98,7 +112,11 @@
                   d="M0 42.6762V468C0 474.627 5.37259 480 12 480H308C314.627 480 320 474.627 320 468V12C320 5.37258 314.627 0 308 0H42.6762L0 42.6762Z"
                   fill="#F2F2F2" />
               </svg>
-              <img class="card__image" src="./img/cat@1x.png" alt="Кот с длинной шерстью и цепочкой на шее.">
+              <picture>
+                <source srcset="./img/cat@1x.webp 1x, ./img/cat@2x.webp 2x" type="image/webp">
+                <img class="card__image" src="./img/cat@1x.png" srcset="./img/cat@2x.png 2x"
+                  alt="Кот с длинной шерстью и цепочкой на шее.">
+              </picture>
               <svg class="card__background card__background--second" width="320" height="480" viewBox="0 0 320 480"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="path-1-inside-1" fill="white">
@@ -120,7 +138,7 @@
                 <span>5<sub>кг</sub></span>
               </div>
             </div>
-            <p class="form__buy form__buy--default">Чего сидишь? Порадуй котэ, <a class="form__link" href="#">купи</a>.
+            <p class="form__buy form__buy--default">Чего сидишь? Порадуй котэ, <a class="form__link">купи</a>.
             </p>
             <p class="form__buy form__buy--checked">Филе из цыплят с трюфелями в бульоне.</p>
             <p class="form__buy form__buy--disabled">Печалька, с курой закончился.</p>
@@ -130,6 +148,11 @@
     </form>
   </section>
 
+  <script src="js/polyfill.min.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>
+    svg4everybody();
+  </script>
   <script src="./js/script.min.js"></script>
 </body>
 
