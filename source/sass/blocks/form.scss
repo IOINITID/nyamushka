@@ -21,8 +21,8 @@
   line-height: 44px;
   font-family: inherit;
   text-align: center;
-  color: #ffffff;
-  text-shadow: 0 1px 1px #000000;
+  color: var(--basic-white);
+  text-shadow: 0 1px 1px var(--basic-black);
 }
 
 .form__items {
@@ -47,15 +47,15 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
-  font-family: "Trebuchet MS", "Arial", sans-serif;
+  font-family: var(--basic-font-additional);
   text-align: center;
-  color: #ffffff;
+  color: var(--basic-white);
 }
 
 .form__link {
-  color: #1698d9;
+  color: var(--basic-curious-blue);
   text-decoration: none;
-  border-bottom: 1px dashed #1698d9;
+  border-bottom: 1px dashed var(--basic-curious-blue);
   cursor: pointer;
 }
 
@@ -72,40 +72,40 @@
 }
 
 .form__label--active .form__link {
-  color: #2ea8e6;
-  border-bottom: 1px dashed #2ea8e6;
+  color: var(--basic-picton-blue);
+  border-bottom: 1px dashed var(--basic-picton-blue);
 }
 
 .form__label--active .card__color {
-  fill: #2ea8e6;
+  fill: var(--basic-picton-blue);
 }
 
 .form__label--active .card__weight {
-  background: #2ea8e6;
+  background: var(--basic-picton-blue);
 }
 
 .form__checkbox:checked ~ .card .card__background--second .card__color {
-  fill: #d91667;
+  fill: var(--basic-razzmatazz);
 }
 
 .form__checkbox:checked ~ .card .card__weight {
-  background: #d91667;
+  background: var(--basic-razzmatazz);
 }
 
 .form__checkbox:checked ~ .card .card__promo--active {
-  color: #d91667;
+  color: var(--basic-razzmatazz);
 }
 
 .form__label--active .form__checkbox:checked ~ .card .card__background--second .card__color {
-  fill: #e52e7a;
+  fill: var(--basic-cerise-red);
 }
 
 .form__label--active .form__checkbox:checked ~ .card .card__weight {
-  background: #e52e7a;
+  background: var(--basic-cerise-red);
 }
 
 .form__label--active .form__checkbox:checked ~ .card .card__promo {
-  color: #e52e7a;
+  color: var(--basic-cerise-red);
 }
 
 .form__checkbox:checked ~ .form__buy.form__buy--default {
@@ -117,7 +117,7 @@
 }
 
 .form__checkbox:disabled ~ .form__buy {
-  color: #ffff66;
+  color: var(--basic-laser-lemon);
 }
 
 .form__checkbox:disabled ~ .form__buy.form__buy--default {
@@ -133,24 +133,24 @@
 }
 
 .form__checkbox:disabled ~ .card .card__promo {
-  color: #b3b3b3;
+  color: var(--basic-nobel);
   opacity: 0.5;
 }
 
 .form__checkbox:disabled ~ .card .card__title {
-  color: #b3b3b3;
+  color: var(--basic-nobel);
   opacity: 0.5;
 }
 
 .form__checkbox:disabled ~ .card .card__item {
-  color: #b3b3b3;
+  color: var(--basic-nobel);
   opacity: 0.5;
 }
 
 .form__checkbox:disabled ~ .card .card__weight {
-  background: #b3b3b3;
+  background: var(--basic-nobel);
 }
 
 .form__checkbox:disabled ~ .card .card__color {
-  fill: #b3b3b3;
+  fill: var(--basic-nobel);
 }

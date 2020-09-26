@@ -26,6 +26,7 @@
   bottom: 0;
   left: 0;
   border-radius: 12px;
+  pointer-events: none;
 }
 
 .card__promo {
@@ -35,8 +36,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  font-family: "Trebuchet MS", "Arial", sans-serif;
-  color: #666666;
+  font-family: var(--basic-font-additional);
+  color: var(--basic-dove-gray);
 }
 
 .card__title {
@@ -45,8 +46,8 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
-  font-family: "Trebuchet MS", "Arial", sans-serif;
-  color: #000000;
+  font-family: var(--basic-font-additional);
+  color: var(--basic-black);
 }
 
 .card__title--additional {
@@ -65,8 +66,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  font-family: "Trebuchet MS", "Arial", sans-serif;
-  color: #666666;
+  font-family: var(--basic-font-additional);
+  color: var(--basic-dove-gray);
 }
 
 .card__item b {
@@ -84,7 +85,7 @@
   width: 80px;
   height: 80px;
   padding-top: 5px;
-  background: #1698d9;
+  background: var(--basic-curious-blue);
   border-radius: 50%;
 }
 
@@ -92,9 +93,9 @@
   font-weight: 400;
   font-size: 42px;
   line-height: 22px;
-  font-family: "Trebuchet MS", "Arial", sans-serif;
+  font-family: var(--basic-font-additional);
   text-align: center;
-  color: #ffffff;
+  color: var(--basic-white);
 }
 
 .card__weight sub {
