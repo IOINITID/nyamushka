@@ -11,7 +11,7 @@ html {
 
 body {
   display: flex;
-  height: auto;
+  height: 100%;
   font-weight: 400;
   font-family: $basic-font-default;
   scroll-behavior: smooth;
@@ -54,5 +54,11 @@ body {
 @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
   .wrapper {
     background-image: url("../img/background@2x.jpg");
+  }
+}
+
+@media (max-width: $width-desktop - 1) {
+  body {
+    height: auto;
   }
 }
